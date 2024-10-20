@@ -1,3 +1,4 @@
+// For ...of
 const fruits = ['Apple', 'Banana', 'Grape'];
 
 for(i in fruits) {
