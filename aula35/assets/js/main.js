@@ -1,4 +1,5 @@
-const res = document.querySelector('.res');
+const container = document.querySelector('.container');
+let res = document.createElement('div');
 
 const elementos = [
     {tag: 'p', texto: 'Frase 1'},
@@ -12,3 +13,5 @@ for(e of elementos) {
     element.innerHTML = e.texto
     res.appendChild(element)
 }
+
+container.appendChild(res);
