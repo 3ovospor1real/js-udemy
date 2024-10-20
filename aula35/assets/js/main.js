@@ -9,9 +9,11 @@ const elementos = [
 ]
 
 for(e of elementos) {
-    let element = document.createElement(e.tag)
-    element.innerHTML = e.texto
-    res.appendChild(element)
+    let element = document.createElement(e.tag);
+    let text = document.createTextNode(e.texto);
+    
+    element.appendChild(text);
+    res.appendChild(element);
 }
 
 container.appendChild(res);
